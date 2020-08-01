@@ -1,10 +1,6 @@
 {
-<<<<<<< Updated upstream
     "python.pythonPath": "C:\\Users\\HuangChun\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
     "files.associations": {
         "iostream": "cpp"
     }
-=======
-    "python.pythonPath": "C:\\Users\\HuangChun\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
->>>>>>> Stashed changes
 }
