@@ -2,6 +2,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: 当前文件",
+            "type": "python",
+            "request": "launch",
+            "pythonPath": "${command:python.interpreterPath}",
+            "program": "${file}",
+            "console": "internalConsole"
+        },
+        {
             "name": "C++: Windows debug",
             "type": "cppvsdbg",
             "request": "launch",
@@ -11,12 +19,11 @@
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "&",
                 "pause"
-
             ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole":true //打开新窗口，方便输入数据
+            "externalConsole": true //打开新窗口，方便输入数据
         },
         {
             "name": "C++: G++ build and debug",
@@ -27,7 +34,7 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": true,      //修改此项，让其弹出终端
+            "externalConsole": true, //修改此项，让其弹出终端
             "MIMode": "gdb",
             "miDebuggerPath": "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\bin\\gdb.exe",
             "setupCommands": [
