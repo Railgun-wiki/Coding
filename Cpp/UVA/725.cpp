@@ -5,6 +5,8 @@
 using namespace std;
 int main(){
     int n;
+    int ans=0;
+    bool last=0;
     while (scanf("%d",&n)!=0){
         if(!n) return 0;
         bool a[10];
@@ -32,7 +34,10 @@ int main(){
             }else{
                 iff=1;
             }
-            
+            if(!ans++){
+                if(ans) cout<<endl<<endl<<endl;
+                else cout<<endl;
+            }
             if(iff==0){
                 ans=1;
                 if(temp<10000) cout<<0;
@@ -43,7 +48,8 @@ int main(){
             memset(a,false,sizeof(a));
         }
         if(!ans){
-            cout<<"There are no solutions for "<<n<<"."<<endl<<endl;
+            cout<<"There are no solutions for "<<n<<".";
+            last=1;
         }
     }
 }
