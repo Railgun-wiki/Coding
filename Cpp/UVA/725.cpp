@@ -5,13 +5,19 @@
 using namespace std;
 int main(){
     int n;
-    int ans=0;
+    int anss=0;
     bool last=0;
     while (scanf("%d",&n)!=0){
         if(!n) return 0;
         bool a[10];
         bool ans=0;
         memset(a,false,sizeof(a));
+        if(anss!=0){
+            if(last) cout<<endl<<endl<<endl;
+            else cout<<endl;
+            last=0;
+        }
+        anss++;
         for(int i=01234;i<=98765;i++){
             int temp=i*n;
             int ttemp=temp;
@@ -33,10 +39,6 @@ int main(){
                 }
             }else{
                 iff=1;
-            }
-            if(!ans++){
-                if(ans) cout<<endl<<endl<<endl;
-                else cout<<endl;
             }
             if(iff==0){
                 ans=1;
