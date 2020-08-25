@@ -332,7 +332,7 @@ int binary_search(int start,int end,int key){
    upper_bound(begin,end,num,cmp);
    //在数组begin到end-1的范围内,找第一个>=num的元素位置
    ```
-```
+
 
 3. 有些问题直接求解可能难以得出答案，在答案可能的取值范围之内枚举答案，在判断这个答案是否可行，二分的形式进行枚举
 
@@ -355,9 +355,8 @@ int binary_search(int start,int end,int key){
 
 #### 1. 01背包：每种物品只能有一个
 
-​```c++
+```c++
 //f[i][j]表示前i个物品，背包最大容量为j
-
 f[i][j] = max(f[i - 1][j],f[i - 1][j - w[i]] + v[i]);
 f[j] = max(f[j],f[j - w[i]] + v[i]);
 //j从大到小
