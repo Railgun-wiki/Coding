@@ -417,6 +417,8 @@ freopen("test.out","w",stdout);
 
 比赛采用NOILinux评测。在Linux中，```main()```函数要返回值0
 
-别忘了写```freopen```了~~(OB君高二的血与泪)~~
+别忘了写```freopen```了
+
+~~(OB君高二的血与泪)~~
 
 # ~~有大佬来加一下注释吗XD~~
