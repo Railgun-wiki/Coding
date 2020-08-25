@@ -22,9 +22,9 @@
         {
             //"version": "2.0.0",
             "label": "g++",
-            "command": "g++",
+            "command": "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\bin\\g++.exe",
             "args": [
-                "-g",
+                "-g3",
                 "${file}",
                 "-o",
                 "${fileBasenameNoExtension}.exe"
