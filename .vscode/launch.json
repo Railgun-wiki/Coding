@@ -66,6 +66,12 @@
                     "ignoreFailures": false
                 }
             ],
-        }
+        },
+        //{
+        //    "name": "g++ just build",
+        //    "type": "cppdbg",
+        //    "request": "launch",
+        //    "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe"
+        //}
     ]
 }
