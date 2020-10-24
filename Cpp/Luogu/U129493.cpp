@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 const int Maxn = 4000;
 long long f[Maxn][Maxn];
