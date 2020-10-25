@@ -2,30 +2,15 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "shell",
-            "label": "task g++",    //修改此项
-            "command": "g++.exe",
-            "args": [
-                "-g3",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build"
-        },
-        {
             //"version": "2.0.0",
             "label": "g++",
             "command": "g++.exe",
             "args": [
                 "-g3",
                 "${file}",
+                "-Wall",
+                "-Wextra",
+                "-Werror",
                 "-o",
                 "${fileBasenameNoExtension}.exe"
             ], // 编译命令参数
